@@ -12,25 +12,39 @@ public class Tester {
         };
         int[] B = {1, 3, 5};
 
+        System.out.println("4a:");
         System.out.println(ArrayOps.sum(test1)); // should be 0
         System.out.println(ArrayOps.sum(test2)); // should be 11
         System.out.println(ArrayOps.sum(test3)); // should be 33
         System.out.println(ArrayOps.sum(B)); // should be 9
+        System.out.println();
 
+        System.out.println("4b:");
         System.out.println(ArrayOps.largest(test2)); // should be 5
         System.out.println(ArrayOps.largest(test3)); // should be 12
+        System.out.println();
 
+        System.out.println("4c:");
         System.out.println(Arrays.toString(ArrayOps.sumRows(test4)));
         // should be [11, 33]
         System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
         // should be [12, 8, -14]
+        System.out.println();
 
+        System.out.println("4d:");
         System.out.println(Arrays.toString(ArrayOps.largestInRows(test4)));
         // should be [5, 12]
         System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
         // should be [12, 7, 2]
+        System.out.println();
 
+        System.out.println("4e:");
         System.out.println(ArrayOps.sum(test4)); // should be 44
         System.out.println(ArrayOps.sum(A)); // should be 6
+        System.out.println();
+        
+        System.out.println("5a:");
+        System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+        // should be [3, -4, 16, -9]
     }
 }
