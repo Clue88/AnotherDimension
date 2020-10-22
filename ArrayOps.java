@@ -14,4 +14,12 @@ public class ArrayOps {
         }
         return largest;
     }
+
+    public static int[] sumRows(int[][] matrix) {
+        int[] out = new int[matrix.length];
+        for (int row = 0; row < matrix.length; row++) {
+            out[row] = sum(matrix[row]);
+        }
+        return out;
+    }
 }
