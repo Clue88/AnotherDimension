@@ -31,8 +31,8 @@ public class ArrayOps {
         return out;
     }
 
-    public static int sum(int[][] matrix) {
-        return sum(sumRows(matrix));
+    public static int sum(int[][] arr) {
+        return sum(sumRows(arr));
     }
 
     public static int[] sumCols(int[][] matrix) {
