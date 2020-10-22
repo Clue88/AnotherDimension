@@ -44,4 +44,12 @@ public class ArrayOps {
         }
         return out;
     }
+
+    public static boolean isRowMagic(int[][] matrix) {
+        int first = sumRows(matrix)[0];
+        for (int i = 0; i < sumRows(matrix).length; i++) {
+            if (sumRows(matrix)[i] != first) return false;
+        }
+        return true;
+    }
 }

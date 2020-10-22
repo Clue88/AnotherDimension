@@ -11,6 +11,20 @@ public class Tester {
             {-5, -2, 2, -9}
         };
         int[] B = {1, 3, 5};
+        int[][] C = {
+            {1, 2, 3, 4},
+            {2, 3, 4, 1},
+            {3, 4, 1, 2}
+        };
+        int[][] D = {
+            {1, 1, 1},
+            {2, 2, 2},
+            {3, 3, 3}
+        };
+        int[][] E = {
+            {2, 2, 2},
+            {2, 2, 2}
+        };
 
         System.out.println("4a:");
         System.out.println(ArrayOps.sum(test1)); // should be 0
@@ -46,5 +60,12 @@ public class Tester {
         System.out.println("5a:");
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
         // should be [3, -4, 16, -9]
+        System.out.println();
+
+        System.out.println("5b:");
+        System.out.println(ArrayOps.isRowMagic(C));
+        // should be true
+        System.out.println(ArrayOps.isRowMagic(D));
+        // should be false
     }
 }
