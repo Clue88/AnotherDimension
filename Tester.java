@@ -67,5 +67,7 @@ public class Tester {
         // should be true
         System.out.println(ArrayOps.isRowMagic(D));
         // should be false
+        System.out.println(ArrayOps.isRowMagic(E));
+        // should be true
     }
 }
