@@ -25,6 +25,10 @@ public class Tester {
             {2, 2, 2},
             {2, 2, 2}
         };
+        int[][] F = {
+            {2, 4, 2},
+            {2, 2, 2}
+        };
 
         System.out.println("4a:");
         System.out.println(ArrayOps.sum(test1)); // should be 0
@@ -77,6 +81,13 @@ public class Tester {
         System.out.println(ArrayOps.isColMagic(D));
         // should be true
         System.out.println(ArrayOps.isColMagic(E));
+        // should be true
+        System.out.println();
+
+        System.out.println("5d:");
+        System.out.println(ArrayOps.isLocationMagic(F, 0, 1));
+        // should be false
+        System.out.println(ArrayOps.isLocationMagic(F, 1, 1));
         // should be true
     }
 }
