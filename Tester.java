@@ -69,5 +69,14 @@ public class Tester {
         // should be false
         System.out.println(ArrayOps.isRowMagic(E));
         // should be true
+        System.out.println();
+
+        System.out.println("5c:");
+        System.out.println(ArrayOps.isColMagic(C));
+        // should be false
+        System.out.println(ArrayOps.isColMagic(D));
+        // should be true
+        System.out.println(ArrayOps.isColMagic(E));
+        // should be true
     }
 }

@@ -31,8 +31,8 @@ public class ArrayOps {
         return out;
     }
 
-    public static int sum(int[][] arr) {
-        return sum(sumRows(arr));
+    public static int sum(int[][] matrix) {
+        return sum(sumRows(matrix));
     }
 
     public static int[] sumCols(int[][] matrix) {
@@ -45,11 +45,19 @@ public class ArrayOps {
         return out;
     }
 
-    public static boolean isRowMagic(int[][] matrix) {
-        int first = sumRows(matrix)[0];
-        for (int i = 0; i < sumRows(matrix).length; i++) {
-            if (sumRows(matrix)[i] != first) return false;
+    public static boolean isAllSame(int[] arr) {
+        int first = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != first) return false;
         }
         return true;
+    }
+
+    public static boolean isRowMagic(int[][] matrix) {
+        return isAllSame(sumRows(matrix));
+    }
+
+    public static boolean isColMagic(int[][] matrix) {
+        return isAllSame(sumCols(matrix));
     }
 }
